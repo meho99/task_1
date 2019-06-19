@@ -5,8 +5,9 @@
 body {
     font-family: 'Advent Pro', sans-serif;
     font-size: 3vw;
+    background-color: rgb(255, 255, 255);
+    width: calc(100vw - (100vw - 100%));
 }
-
 
 /* --------------------   Zerowanie  --------------------  */
 
@@ -18,6 +19,8 @@ body {
     vertical-align: baseline;
     text-decoration: none;
     outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -30,15 +33,14 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));
     height: 30vw;
-    margin: 0 auto;
     background-image: url('../assets/header.png');
     background-repeat: repeat;
     background-position: center;
-    background-size: 100vw;
-    background-color: rgb(28, 66, 66);
-    border-bottom: 0.3vw solid black;
+    background-size: 100%;
+    background-color: #994c8a;
+    border: 0.8vw solid black;
 }
 
 #header-icon{
@@ -50,6 +52,7 @@ header{
 #main_heading{
     margin-bottom: 2vw;
     color: white;
+    font-size: 6vw;
     z-index: 2;
 }
 
@@ -63,15 +66,50 @@ header{
 /* -- 'ciało' strony -- */
 
 #container{
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .heading{
-    margin-top: 2vw;
+    margin-top: 3vw;
+    font-size: 4vw;
     color: #994c8a;
+}
+
+#benefits{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.plus{
+    width: 36vw;
+    height: 13vw;
+    margin-top: 3vw;
+    position: relative;
+    border: 0.3vw solid black;
+    background-color: white;
+    padding: 1% 0;
+}
+.plus p{
+    color: black;
+    font-weight: bold;
+    font-size: 3.5vw;
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.fruitIcon{
+    position: absolute;
+    width: 15vw;
+    top: 0;
+    left: 12vw;
+    z-index: 0;
 }
 
 
