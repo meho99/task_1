@@ -26,6 +26,13 @@ body {
 
 /* --------------------   domyślne style  --------------------  */
 
+/* -- cienie -- */
+
+.shadows{
+    -webkit-box-shadow: 5px 5px 11px 5px #595959; 
+    box-shadow: 5px 5px 11px 5px #595959;
+}
+
 /* -- nagłowek -- */
 
 header{
@@ -42,20 +49,27 @@ header{
     background-color: #994c8a;
     border: 0.8vw solid black;
 }
-
 #header-icon{
     position: absolute;
     width: 25vw;
     z-index: 1;
 }
-
 #main_heading{
     margin-bottom: 2vw;
     color: white;
+    text-decoration: underline;
+    text-decoration-color: #105984;
+    font-style: italic;
     font-size: 6vw;
     z-index: 2;
 }
-
+#newHeading{
+    transform: skewY(-6deg);
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vw;
+    z-index: 2;
+}
 .subtitle{
     font-style: italic;
     font-size: 2vw;
@@ -71,28 +85,29 @@ header{
     flex-direction: column;
     align-items: center;
 }
-
 .heading{
-    margin-top: 3vw;
+    margin: 4vw 0;
     font-size: 4vw;
-    color: #994c8a;
+    color: #105984
 }
-
 #benefits{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .plus{
-    width: 36vw;
-    height: 13vw;
-    margin-top: 3vw;
+    width: 34vw;
+    height: 13vw;  
+    margin-bottom: 3vw;
     position: relative;
     border: 0.3vw solid black;
-    background-color: white;
     padding: 1% 0;
+    cursor: pointer;
+}
+.plus:hover{
+    border: 0.3vw solid #994c8a;
+    background-color: #f2f2f2;
 }
 .plus p{
     color: black;
@@ -103,15 +118,31 @@ header{
     text-align: center;
     width: 100%;
 }
-
 .fruitIcon{
     position: absolute;
     width: 15vw;
     top: 0;
-    left: 12vw;
+    left: 10vw;
     z-index: 0;
 }
+.sliders{
+    width: 80%;
+    height: 35vw;
+    border: 0.3vw solid black;
+    display: none;
+}
 
+/* Formularz */
+
+#emailHeading{
+    font-size: 2.5vw;
+}
+#emailInput{
+    width: 30vw;
+    font-size: 2vw;
+    background-color: #f2f2f2;
+    text-align: center;
+}
 
 
 /* ----------  Style działające dla szerokości ekranu mniejszej od 768px  ----------- */
