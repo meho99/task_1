@@ -13,6 +13,7 @@
 
 <body>
     <header class='shadows'>
+
         <h2 id='newHeading'>! BRAND NEW !</h2>
         <h1 id='main_heading'>SMOOTHIE DELIGHT</h1>
         <h2 class='subtitle'> EVERY SMOOTHIE IS AN EXPERIENCE. </h2>
@@ -28,35 +29,48 @@
         <div id='benefits'>
 
             <div class='plus shadows'>
-                <p>It is really delicious ! </p><img class='fruitIcon' src='./assets/berries.png' alt='berries' />
+                <p>It is really delicious ! </p><img class='fruitIcon' src='./assets/fruitIcons/berries.png'
+                    alt='berries' />
             </div>
             <div class='plus shadows'>
-                <p>It is very healthy ! </p><img class='fruitIcon' src='./assets/cherry.png' alt='cherry' />
+                <p>It is very healthy ! </p><img class='fruitIcon' src='./assets/fruitIcons/cherry.png' alt='cherry' />
             </div>
             <div class='plus shadows'>
-                <p>It helps you build your muscles ! </p><img class='fruitIcon' src='./assets/rasberry.png'
+                <p>It helps you build your muscles ! </p><img class='fruitIcon' src='./assets/fruitIcons/rasberry.png'
                     alt='rasberry' />
             </div>
             <div class='plus shadows'>
-                <p>It helps you lose your weight !</p><img class='fruitIcon' src='./assets/blackberry.png'
+                <p>It helps you lose your weight !</p><img class='fruitIcon' src='./assets/fruitIcons/blackberry.png'
                     alt='blackberry' />
             </div>
 
         </div>
 
         <h2 class='heading'>! SMOOTHIE DELIGHT !</h2>
-        <img class='sliders shadows' alt='blurImage' src='./assets/blur.jpg'/>
-        <img class='sliders shadows' alt='blurImage' src='./assets/blur2.jpg'/>
+        <img class='sliders shadows' alt='blurImage' src='./assets/banner/blur.jpg' />
+        <img class='sliders shadows' alt='blurImage' src='./assets/banner/blur2.jpg' />
 
-        <h2 class='heading '>! STAY ALERT !</h2>
-        <h3 id='emailHeading'> SIGN UP FOR OUR MAILING LIST TO GET UPDATES </h3>
+        <h2 class='heading printDelete '>! STAY ALERT !</h2>
+        <h3 id='emailHeading' class='printDelete'> SIGN UP FOR OUR MAILING LIST TO GET UPDATES </h3>
 
-        <div id='mainForm'>
+        <div id='mainForm' class='shadows printDelete'>
 
+            <p> Write your first name : </p>
+            <input type='text' class='emailInput' placeholder='your Name' />
             <p> Write your email address : </p>
-            <input type='email' id='emailInput' value='your email' />
+            <input type='email' class='emailInput' placeholder='your email' /><br />
 
         </div>
+        <input id='submit' class='shadows printDelete' type='submit' value="Sign Up" />
+
+        <h2 class='heading '>! FIND US ON SOCIAL MEDIA !</h2>
+
+        <div id='iconsDiv'>
+                <img class='socialIcon shadows' src='./assets/socialMediaIcons/facebook.png' alt='facebook'/>
+                <img class='socialIcon shadows' src='./assets/socialMediaIcons/instagram.png' alt='instagram'/>
+                <img class='socialIcon shadows' src='./assets/socialMediaIcons/youtube.png' alt='youtoube'/>
+        </div>
+        
 
     </div>
     <footer>
