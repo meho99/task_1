@@ -29,6 +29,7 @@ let allowCrossDomain = function (req, res, next) {
 app.use(allowCrossDomain);
 
 // ----- odebranie danych -----
+
 app.post('', function (request, response) {
     var name = request.body.body.name;
     var email = request.body.body.email;
@@ -42,9 +43,6 @@ app.post('', function (request, response) {
         .write()
 
     response.json('User added to database');
-
-
-
 });
 
 app.listen(3000, () => {

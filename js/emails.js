@@ -45,6 +45,12 @@ const postData = post => {
     }
     return fetch('http://localhost:3000/', options)
         .then(res => res.json())
-        .then(res => console.log(res))
+        .then(res => {
+            // ----- wyzerowanie wartości w inputach -----
+
+            document.getElementById('nameInput').value='';
+            document.getElementById('emailInput').value='';
+            console.log(res)
+        })
         .catch(err => console.error('ERROR'))
 }
