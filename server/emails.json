@@ -1,0 +1,10 @@
+{
+  "emails": [
+    {
+      "name": "Jan",
+      "email": "jan-kowalski@test.pl"
+    }
+  ],
+  "name": "email-list",
+  "count": 1
+}

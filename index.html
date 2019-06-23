@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>smoothie delight</title>
+    <meta name='keywords' content="smoothie, fruits, delight, healthy smoothie, weightloss, building muscles, quiz">
+    <meta name='description' content="Brand new Smoothie Delight. Blueberry, Raspberry, blackberry and Cherry flavours ! Healthy, delicious.">
+    <title>best smoothie - smoothie delight </title>
+
+    <link rel="shortcut icon" href="assets/smoothie-icon.png">
 
     <link href='./style/style.css' rel='stylesheet' type='text/css' />
     <script src='./js/slider.js'></script>
+    <script src='./js/emails.js'></script>
+    <script src='./js/quiz.js'></script>
 </head>
 
 <body>
@@ -24,53 +30,71 @@
 
     <div id='container'>
 
-        <h2 class='heading'>? WHY OUR SMOOTHIE IS THE BEST ?</h2>
+        <h2 class='heading'>: PROS OF OUR SMOOTHIES :</h2>
 
         <div id='benefits'>
 
             <div class='plus shadows'>
-                <p>It is really delicious ! </p><img class='fruitIcon' src='./assets/fruitIcons/berries.png'
-                    alt='berries' />
+                <p>Delicious flavours! </p><img class='fruitIcon' src='./assets/fruitIcons/berries.png' alt='berries' />
             </div>
             <div class='plus shadows'>
-                <p>It is very healthy ! </p><img class='fruitIcon' src='./assets/fruitIcons/cherry.png' alt='cherry' />
+                <p>Promotes healthy lifestyle! </p><img class='fruitIcon' src='./assets/fruitIcons/cherry.png'
+                    alt='cherry' />
             </div>
             <div class='plus shadows'>
-                <p>It helps you build your muscles ! </p><img class='fruitIcon' src='./assets/fruitIcons/rasberry.png'
+                <p>Build your muscles! </p><img class='fruitIcon' src='./assets/fruitIcons/rasberry.png'
                     alt='rasberry' />
             </div>
             <div class='plus shadows'>
-                <p>It helps you lose your weight !</p><img class='fruitIcon' src='./assets/fruitIcons/blackberry.png'
+                <p>Helps in weightloss!</p><img class='fruitIcon' src='./assets/fruitIcons/blackberry.png'
                     alt='blackberry' />
             </div>
 
         </div>
 
         <h2 class='heading'>! SMOOTHIE DELIGHT !</h2>
+
         <img class='sliders shadows' alt='blurImage' src='./assets/banner/blur.jpg' />
         <img class='sliders shadows' alt='blurImage' src='./assets/banner/blur2.jpg' />
 
-        <h2 class='heading printDelete '>! STAY ALERT !</h2>
-        <h3 id='emailHeading' class='printDelete'> SIGN UP FOR OUR MAILING LIST TO GET UPDATES </h3>
+        <h2 class='heading '>: AVAILABLE FLAVOURS :</h2>
+        <img src='./assets/flavors.png' alt='flavors' id='flavorsImage' />
 
-        <div id='mainForm' class='shadows printDelete'>
+        <h2 class='heading '>? WHAT FLAVOUR DESCRIBES YOU THE BEST ?</h2>
+        <h3 class='smallerPinkHeading'> TAKE A SHORT QUIZ TO FIND OUT  </h3>
 
-            <p> Write your first name : </p>
-            <input type='text' class='emailInput' placeholder='your Name' />
-            <p> Write your email address : </p>
-            <input type='email' class='emailInput' placeholder='your email' /><br />
+        <div id='quizContainer' class='shadows'>
+            <p id='question'></p>
+            <div id='choices'>
+
+            </div> 
+
 
         </div>
-        <input id='submit' class='shadows printDelete' type='submit' value="Sign Up" />
+
+        <h2 class='heading'>! STAY ALERT !</h2>
+        <h3 class='smallerPinkHeading'> SIGN UP FOR OUR MAILING LIST TO GET UPDATES </h3>
+
+        <div id='mainForm' class='shadows'>
+
+            <p>First Name : </p>
+            <input type='text' class='emailInput' id='nameInput' placeholder='Your Name' />
+            <p> Email Address : </p>
+            <input type='email' class='emailInput' id='emailInput' placeholder='Your Email' /><br />
+
+        </div>
+        <input id='submit' class='shadows' type='submit' onclick='subscription()' value="Sign Up" />
+
+
 
         <h2 class='heading '>! FIND US ON SOCIAL MEDIA !</h2>
 
         <div id='iconsDiv'>
-                <img class='socialIcon shadows' src='./assets/socialMediaIcons/facebook.png' alt='facebook'/>
-                <img class='socialIcon shadows' src='./assets/socialMediaIcons/instagram.png' alt='instagram'/>
-                <img class='socialIcon shadows' src='./assets/socialMediaIcons/youtube.png' alt='youtoube'/>
+            <img class='socialIcon shadows' src='./assets/socialMediaIcons/facebook.png' alt='facebook' />
+            <img class='socialIcon shadows' src='./assets/socialMediaIcons/instagram.png' alt='instagram' />
+            <img class='socialIcon shadows' src='./assets/socialMediaIcons/youtube.png' alt='youtoube' />
         </div>
-        
+
 
     </div>
     <footer>

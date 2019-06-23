@@ -101,13 +101,12 @@ header{
     height: 13vw;  
     margin-bottom: 3vw;
     position: relative;
-    border: 0.3vw solid black;
+    background-color: #f4f4ff;
     padding: 1% 0;
     cursor: pointer;
 }
 .plus:hover{
     border: 0.3vw solid #994c8a;
-    background-color: #f2f2f2;
 }
 .plus p{
     color: black;
@@ -128,24 +127,68 @@ header{
 .sliders{
     width: 80%;
     height: 35vw;
-    border: 0.3vw solid black;
     display: none;
+}
+#flavorsImage{
+    width: 90vw;
+    margin-bottom: 4vw;
+}
+/* Quiz */
+
+#quizContainer{
+    display: flex;
+    flex-direction: column; 
+    align-items:center;
+    background-color: #105984;
+    border-radius: 0.5vw;
+    padding: 4vw;
+    margin-bottom: 4vw;
+}
+#question{
+    font-size: 3.5vw;
+    margin-bottom: 1.5vw;
+    margin-top: 0;
+    font-weight: bold;
+}
+.answer{
+    padding: 0.2vw;
+    width: 15vw;
+    font-size: 2vw;
+    color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 5vw;
+    border-radius: 0.5vw;
+    background-color: white;
+    cursor: pointer;
+}
+.answer:hover{
+    color: #105984;
+}
+#choices{
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 /* Formularz */
 
-#emailHeading{
+.smallerPinkHeading{
     font-size: 3vw;
     color: #994c8a;
+    margin-bottom: 1vw;
 }
 #mainForm{
     text-align: center;
-    border: 0.3vw solid black;
     padding: 2vw;
     margin: 1vw;
     background-image: url('../assets/header.png');
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 0.5vw;
     background-size: 100%;
     color: white;
 }
@@ -155,8 +198,7 @@ header{
     background-color: white;
     color: #105984;
     text-align: center;
-    border-radius: 20%;
-    border: 0.3vw solid black;
+    border-radius: 0.5vw;
 }
 #submit{
     width: 20vw;
@@ -166,9 +208,8 @@ header{
     background-color: #994c8a;
     color: white;
     text-align: center;
-    border-radius: 20%;
+    border-radius: 1vw;
     margin-top: 1vw 0;
-    border: 0.3vw solid black;
     background-image: url('../assets/header.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -186,13 +227,13 @@ header{
 }
 .socialIcon{
     margin: 1vw 5vw;
-    border: 0.2vw solid black;
     padding: 1vw;
+    border-radius: 0.5vw;
     cursor: pointer;
     width: 6vw;
 }
 .socialIcon:hover{
-    border-color: #994c8a;
+    background-color: #d5d5df;
 }
 
 /* -- stopka -- */
@@ -278,11 +319,8 @@ footer a{
 /* ----------  Style dla wydruku strony  ----------- */
 
 @media print {
-    .printDelete{
-        display: none;
-    }
     .heading{
-        margin: 3vw;
+        margin: 1vw;
     }
 }
 

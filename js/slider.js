@@ -5,7 +5,6 @@ let actualImage = 1;
 // -- przejście do następnego obrazka --
 
 var nextImage = ()=>{
-    console.log('u')
     showImage(actualImage+ 1)
 }
 
@@ -29,8 +28,6 @@ showImage = (x) => {
 
     images[actualImage - 1].style.display = 'block'; // wyświetlenie obrazka
    
-    console.log(actualImage-1)
-
 }
 
 // -- po załadowaniu strony --
