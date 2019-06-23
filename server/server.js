@@ -1,4 +1,4 @@
-// ----- serwer odbierający dane i wysyłający je na emaila -----
+// ----- serwer odbierający dane i zapisujący je w bazie -----
 
 const express = require("express");
 const bodyParser = require("body-parser");
